@@ -2,3 +2,13 @@
 Place your custom CSS here
 */
 // @import "../../node_modules/antd/dist/antd";
+
+.mendixcn-powerbi-client {
+    iframe {
+        border: none;
+    }
+
+    .report-style-class {
+        height: 100%;
+    }
+}

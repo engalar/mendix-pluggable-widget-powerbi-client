@@ -1,3 +1,6 @@
+![content](img/snapshot.png)
+# FAQ
+- [react/jsx-runtime 找不到](https://forum.mendix.tencent-cloud.com/info/98beec581d2842f293bf105d7e868ad6?csr=1)
 # mendix 前端组件开发模板库
 
 # 创建脚手架

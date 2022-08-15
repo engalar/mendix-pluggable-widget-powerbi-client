@@ -4,13 +4,15 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
+import { EditableValue } from "mendix";
 
 export interface PowerbiClientContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
+    embedUrl: EditableValue<string>;
+    accessToken: EditableValue<string>;
 }
 
 export interface PowerbiClientPreviewProps {
@@ -18,5 +20,6 @@ export interface PowerbiClientPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    sampleText: string;
+    embedUrl: string;
+    accessToken: string;
 }
