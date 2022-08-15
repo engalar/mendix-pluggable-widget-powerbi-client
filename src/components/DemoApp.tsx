@@ -6,7 +6,6 @@ import { models, Report, Embed, service } from "powerbi-client";
 import { PowerBIEmbed } from "powerbi-client-react";
 import "powerbi-report-authoring";
 
-
 // Root Component to demonstrate usage of wrapper component
 function DemoApp(props: models.IReportEmbedConfiguration): JSX.Element {
     // PowerBI Report object (to be received via callback)
@@ -38,15 +37,15 @@ function DemoApp(props: models.IReportEmbedConfiguration): JSX.Element {
     ]);
 
     return (
-            <PowerBIEmbed
-                embedConfig={props}
-                eventHandlers={eventHandlersMap}
-                cssClassName={"report-style-class"}
-                getEmbeddedComponent={(embedObject: Embed) => {
-                    console.log(`Embedded object of type "${embedObject.embedtype}" received`);
-                    setReport(embedObject as Report);
-                }}
-            />
+        <PowerBIEmbed
+            embedConfig={props}
+            eventHandlers={eventHandlersMap}
+            cssClassName={"report-style-class"}
+            getEmbeddedComponent={(embedObject: Embed) => {
+                console.log(`Embedded object of type "${embedObject.embedtype}" received`);
+                setReport(embedObject as Report);
+            }}
+        />
     );
 }
 

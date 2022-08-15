@@ -9,7 +9,7 @@ import DemoApp from "./components/DemoApp";
 
 export default function (props: PowerbiClientContainerProps) {
     const reportConfig = useMemo(() => {
-        let cfg: models.IReportEmbedConfiguration = {
+        const cfg: models.IReportEmbedConfiguration = {
             type: "report",
             embedUrl: undefined,
             tokenType: models.TokenType.Embed,
