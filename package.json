@@ -1,7 +1,7 @@
 {
   "name": "powerbiclient",
   "widgetName": "PowerbiClient",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "My widget description",
   "packagePath": "mendixcn",
   "author": "wengao.liu@siemens.com",
