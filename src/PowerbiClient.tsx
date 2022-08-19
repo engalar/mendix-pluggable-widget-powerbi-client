@@ -15,7 +15,7 @@ export default function (props: PowerbiClientContainerProps) {
             tokenType: models.TokenType.Embed,
             accessToken: undefined,
             settings: undefined,
-            hostname: 'https://app.powerbi.cn'
+            hostname: "https://app.powerbi.cn"
         };
         if (props.embedUrl.status === ValueStatus.Available && props.accessToken.status === ValueStatus.Available) {
             cfg.accessToken = props.accessToken.value;
